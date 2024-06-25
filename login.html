@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AULITA - Login</title>
+   <link rel="stylesheet" href="style/login.css">
+</head>
+<body onload="login()">
+   <main>
+      <div class="logo">
+         <img src="src/img/logo-aulita.png" alt="logo-aulita">
+      </div>
+      <form id="loginPage" action="server/admin.php" method="post">
+         <div class="A">
+            <label for="usn">USERNAME or NIA</label><br>
+            <input type="text" name="usn" id="usn">
+         </div>
+         <div class="B">
+            <label for="pwd">PASSWORD</label><br>
+            <input type="password" name="pwd" id="pwd">
+         </div>
+         <div class="C">
+            <input type="checkbox" id="togglePassword">
+            <label for="togglePassword">Show password</label>
+         </div>
+         <div class="D">
+            <img src="src/img/captcha.png" alt="captcha">
+            <label for="captcha">CAPTCHA</label>
+            <p></p>
+            <input type="text" name="captcha" id="captcha" placeholder="Write numbers in the box">
+         </div>
+         <input type="submit" name="login" value="LOGIN">
+         <div class="E">
+            <a href="server/admin.php">FORGOT PASSWORD?</a>
+         </div>
+      </form>
+   </main>
+   <script src="script/page.js"></script>
+</body>
+</html>
