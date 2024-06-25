@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       "Bentuk Event"=> $eventform,
       "Deskripsi Event"=> $eventdescription);
       
-      $fileData = 'contribution.txt';
+      $fileData = '../src/data/contribution.txt';
       $fl = fopen($fileData,'a+');
       $tulisFile = "\n--Data--\n".implode("\n", $arrData);
       fwrite($fl, $tulisFile);
