@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+}
+@font-face {
+  font-family: 'Source Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+  font-weight: 300;
+}
+body{
+	background-color: #013927;
+	color: #ffff;
+	font-family: "Alegreya", serif;
+}
+header {
+	width: 100%;
+	position: fixed; 
+	top: 0;
+	background: #013927;
+}
+header span{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+}
+the-logo{
+	display: flex;
+}
+the-logo div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+the-logo div h3{
+	font-size: 2rem;
+	margin: 5px 0 5px 0;
+}
+the-logo div p{
+	font-size: 0.8rem;
+}
+the-logo img{
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+}
+nav{
+	display: flex;
+	align-items: center;
+}
+nav a{
+	margin: 0 10px 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 0;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+nav a:hover{
+	color: gray;
+}
+hr{
+	border: 2px solid #ffffff;
+	margin: 0;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+main h1{
+	font-size: 5rem;
+	text-align: center;
+	margin: 40px;
+	padding: 0 60px;
+}
+main a{
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 1rem;
+	padding: 10px 15px;
+	font-family: "Source Sans", sans-serif;
+}
+
+ab-out{
+	display: flex;
+	border-top: 103px;
+}
+ab-out img{
+	height: 540px;
+	width: 670px;
+	margin: 20px;
+}
+ab-out .about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+}
+ab-out h2{
+	font-size: 4rem;
+	margin: 30px;
+}
+ab-out p{
+	font-family: "Source Sans", sans-serif;
+	text-align: justify;
+	letter-spacing: 2px;
+	line-height: 1.3em;
+	margin: 30px;
+}
+ab-out h5{
+	font-family: "Source Sans", sans-serif;
+	text-align: justify;
+	letter-spacing: 4px;
+	color: #00BF63;
+}
+
+vision-mision{
+	display: flex;
+}
+vision-mision div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+}
+vision-mision h3{
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+vision-mision .mision, .vision{
+	width: 30%;
+}
+vision-mision .vision .visiA{
+	color: #CAE6D5;
+	font-family: 'Source Sans', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.3rem;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+vision-mision .vision .visiB{
+	font-family: 'Source Sans', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.3rem;
+	text-align: justify;
+}
+vision-mision .mision ol{
+	padding: 0 30px;
+}
+vision-mision .mision li{
+	color: #CAE6D5;
+	font-family: 'Source Sans', sans-serif;
+	list-style: decimal;
+	letter-spacing: 2px;
+	line-height: 1.3rem;
+	text-align: justify;
+}
+vision-mision img{
+	width:  400px;
+	height: 670px;
+}
+
+pe-aks{
+	display: flex;
+	flex-direction: column;
+}
+pe-aks h2{
+	font-size: 4rem;
+	margin: 30px 0;
+	padding: 0 70px;
+	text-align: center;
+}
+pe-aks .peaks{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: 40px 0;
+}
+pe-aks span img{
+	width: 250px;
+	height: 250px;
+	margin: 20px 0;
+	border-radius: 50%;
+}
+pe-aks h4{
+	font-size: 2rem;
+	margin: 20px 0;
+}
+pe-aks p{
+	font-family: 'Source Sans', sans-serif;
+}
+
+com-mit{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 50px 0;
+}
+com-mit div{
+	height: 40vh;
+}
+com-mit h2{
+	font-size: 4rem;
+	padding: 30px;
+}
+com-mit h4{
+	font-size: 2rem;
+	font-family: 'Source Sans', sans-serif;
+	color: #CAE6D5;
+}
+com-mit p{
+	font-family: 'Source Sans', sans-serif;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+press-release{
+	margin: 40px 0;
+}
+press-release .container{
+	display: flex;
+	justify-content: space-around;
+	flex-shrink: 0;
+	font-family: 'Source Sans', sans-serif;
+}
+press-release h2{
+	font-size: 4rem;
+	padding: 30px;
+}
+press-release .container div{
+	border: solid 1px white;
+	width: 285px;
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+}
+press-release h5{
+	font-size: 1.3rem;
+	padding: 10px;
+}
+press-release p{
+	padding: 10px;
+	/* justify-self: right;?????? */
+}
+press-release img{
+	width: 260px;
+	height: 155px;
+	align-self: center;
+	padding: 10px;
+}
+/* RELEASE: Blom tuntas */
+
+footer{
+	padding: 30px;
+}
+/* footer .A{
+	height: 300px;
+	margin-bottom: 65px;
+} */
+footer .A img{
+	height: auto;
+	width: 100%;
+	margin-bottom: 65px;
+}
+footer ka-ki {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+footer ka-ki h4{
+	font-size: 2rem;
+	margin: 20px 0;
+}
+footer ka-ki p{
+	margin: 20px 0;
+	font-family: 'Source Sans', sans-serif;
+	color: #CAE6D5;
+	letter-spacing: 2px;
+	line-height: 1.2rem;
+}
+footer .D{
+	border: #ffffff 3px solid;
+	display: flex;
+	height: 50%;
+	align-items: center;
+	align-self: self-end;
+	/* justify-content: ; */
+}
+footer .D h4{
+	margin: 10px 20px 10px 5px;
+}
+footer .D img{
+	width: 40px;
+	height: 40px;
+	margin: 0 10px;
+}
+
+.tumbal{
+	min-height: 103px;
+}

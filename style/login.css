@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+}
+@font-face {
+  font-family: 'Source Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+  font-weight: 300;
+}
+body{
+	height: 100vh;
+	font-family: "Alegreya", serif;
+	background-color: #4A6B45;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main{
+	background-color: #013927;
+	width: 50%;
+	padding: 35px 50px;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main .logo img{
+	width: 90px;
+	height: 90px;
+	background-color: rgba(245, 255, 250, 0.5);
+	border-radius: 50%;
+	margin: 0 30px 30px 30px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+label{
+	color: #CAE6D5;
+	text-align: left;
+}
+.A,.B,.C,.D{
+	margin-bottom: 15px;
+	width:fit-content ;
+}
+input{
+	width: 17rem;
+	padding:0 20px;
+	height: 2.5rem;
+	background-color: hsla(144, 37%, 85%, 0.5);
+	border: 0;
+	border-radius: 5px;
+	color: #ffffff;
+}
+input[type='checkbox']{
+	width: unset;
+	height: unset;
+	margin: 0;
+	display: block;
+	margin: 0 5px 0 0;
+}
+input[type='submit']{
+	font-family: 'Source Pro', sans-serif;
+	font-weight: bold;
+	margin: 0;
+	width: 12rem;
+	height: 1.8rem;
+	border-radius: 50px;
+	background-color: #099140;
+	color: #ffffff;
+	margin: 0 10px;
+	align-self: center;
+}
+.C{
+	display: flex;
+}
+.D{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.D input{
+	width: unset;
+	height: 1.8rem;
+}
+.D img{
+	width: 100px;
+	height: 50px;
+	margin-right: 20px;
+}
+.E{
+	margin-top: 15px;
+	align-self: center;
+}
+a{
+	color: hsla(144, 37%, 85%, 0.5);
+}
+::placeholder {
+  color: hsla(144, 37%, 85%, 0.5);
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: hsla(144, 37%, 85%, 0.5);
+}
+
+.error{
+	border: 2px solid red;
+}
