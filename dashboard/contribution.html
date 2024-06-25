@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AULITA - Dashboard</title>
+   <link rel="stylesheet" href="../style/contribution.css">
+</head>
+<body onload="checkPopup()">
+   <aside>
+      <img src="../src/img/maman.png" alt="">
+      <a href="dashboard.html">DASHBOARD</a href="">
+      <a href="dashboard.html">PROFILE</a>
+      <a href="contribution.html">CONTRIBUTION</a>
+      <a href="underconstruct.html">NATURE</a>
+      <a href="#" onclick="ensure()">LOGOUT</a>
+      <div>
+         <p>Version System 0.1.314 Apk</p>
+      </div>
+   </aside>
+   <main>
+      <header>
+         <hr>
+         <h3>SISTEM INFORMASI KEANGGOTAAN</h3>
+      </header>
+      <ut-ama>
+         <div class="container">
+            <h4>CONTRIBUTION FORM</h4>
+
+            <form id="formulir" action="../server/data.php" method="post">
+               <div class="A">
+                  <label for="nameEvent">Event Name</label>
+                  <input type="text" name="nameEvent" id="nameEvent">
+               </div>
+               <div class="B">
+                  <label for="dateEvent">Date</label>
+                  <input type="date" name="dateEvent" id="dateEvent">
+               </div>
+               <div class="C">
+                  <label for="eventScope">Event Scope</label><br>
+                  <input type="radio" name="eventScope" id="eventScopeA" value="Internal">
+                  <label for="eventScopeA">Internal</label>
+                  <input type="radio" name="eventScope" id="eventScopeB" value="External">
+                  <label for="eventScopeB">External</label>
+               </div>
+               <div class="D">
+                  <label for="eventForm">Event Form</label>
+                  <select name="eventForm" id="eventForm">
+                     <option value="-">-</option>
+                     <optgroup label="Nature">
+                        <option value="Reboisasi">Reboisasi</option>
+                        <option value="Tanam Mangroove">Tanam Mangroove</option>
+                        <option value="Go Green">Go Green</option>
+                        <option value="Go Clean">Go Clean</option>
+                     </optgroup>
+                     <optgroup label="Social">
+                        <option value="Baksos">Baksos</option>
+                        <option value="Khitan Massal">Khitan Massal</option>
+                     </optgroup>
+                  </select>
+               </div>
+               <div class="E">
+                  <label for="eventDescription">Event Description</label>
+                  <textarea name="eventDescription" id="eventDescription" rows="5" placeholder="Write description about the event"></textarea>
+               </div>
+      
+               <input type="submit" name="submit" value="SUBMIT">
+            </form>
+         </div>
+      </ut-ama>
+   </main>
+   <script lang="javascript" src="../script/page.js"></script>
+</body>
+</html>
